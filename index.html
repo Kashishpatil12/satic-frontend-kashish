@@ -4,14 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Professional Website</title>
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
-    <nav>
-      <h1>Website Name</h1>
-      <ul>
+    <nav class="navbar">
+      <h1 class="logo">Website Name</h1>
+      <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
@@ -21,124 +25,114 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
 
-    <!-- Hero Section -->
-    <section>
+    <!-- HERO SECTION -->
+    <section class="hero">
       <h2>Delivering Digital Solutions That Matter</h2>
       <p>
-        Placeholder text introducing the core message and value
-        proposition of the organization.
+        We help businesses grow with modern, scalable, and user-friendly
+        digital solutions.
       </p>
 
       <img
         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
-        alt="Professional team working together"
-        width="100%">
+        alt="Professional team working together">
 
-      <button>Get Started</button>
-      <button>Learn More</button>
+      <div class="hero-buttons">
+        <button class="btn primary">Get Started</button>
+        <button class="btn secondary">Learn More</button>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section>
-      <h3>About Us</h3>
-
+    <!-- ABOUT -->
+    <section class="about">
       <img
         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80"
-        alt="Office collaboration environment">
+        alt="Office collaboration">
 
-      <p>
-        Placeholder text describing the background, mission,
-        and overall approach of the organization.
-      </p>
+      <div class="about-text">
+        <h3>About Us</h3>
+        <p>
+          We are a professional digital agency focused on delivering
+          innovative and result-driven solutions for modern businesses.
+        </p>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section>
+    <!-- SERVICES -->
+    <section class="services">
       <h3>Our Services</h3>
 
-      <article>
-        <img
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
-          alt="Web design and development">
-        <h4>Service One</h4>
-        <p>Placeholder description for the first service offering.</p>
-      </article>
+      <div class="service-grid">
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+            alt="Web development">
+          <h4>Web Development</h4>
+          <p>High-quality responsive websites and applications.</p>
+        </article>
 
-      <article>
-        <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
-          alt="Software development process">
-        <h4>Service Two</h4>
-        <p>Placeholder description for the second service offering.</p>
-      </article>
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+            alt="Software development">
+          <h4>Software Solutions</h4>
+          <p>Custom software to streamline business operations.</p>
+        </article>
 
-      <article>
-        <img
-          src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600&q=80"
-          alt="Business strategy planning">
-        <h4>Service Three</h4>
-        <p>Placeholder description for the third service offering.</p>
-      </article>
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600&q=80"
+            alt="Business strategy">
+          <h4>Business Strategy</h4>
+          <p>Data-driven strategies for sustainable growth.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
       <h3>Testimonials</h3>
 
       <img
         src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=80"
-        alt="Client testimonial placeholder">
+        alt="Client feedback">
 
-      <article>
-        <p>
-          “Placeholder testimonial highlighting positive experience
-          and satisfaction.”
-        </p>
+      <div class="testimonial-box">
+        <p>“Excellent service and professional support throughout the project.”</p>
         <p>— Client Name</p>
-      </article>
-
-      <article>
-        <p>
-          “Another placeholder testimonial showing trust and value.”
-        </p>
-        <p>— Client Name</p>
-      </article>
+      </div>
     </section>
 
-    <!-- Call To Action -->
-    <section>
+    <!-- CTA -->
+    <section class="cta">
       <h3>Ready to Take the Next Step?</h3>
-      <p>
-        Placeholder text encouraging users to get in touch
-        or start their journey.
-      </p>
-      <button>Contact Us</button>
+      <p>Contact us today and start building your digital future.</p>
+      <button class="btn primary">Contact Us</button>
     </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-
-    <section>
+    <div class="footer-section">
       <h4>Company Information</h4>
-      <p>Placeholder company details or short description.</p>
-    </section>
+      <p>We provide professional digital services worldwide.</p>
+    </div>
 
-    <section>
+    <div class="footer-section">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms & Conditions</a></li>
         <li><a href="#">Support</a></li>
       </ul>
-    </section>
+    </div>
 
-    <p>© 2026 Placeholder Website. All rights reserved.</p>
-
+    <p class="copyright">
+      © 2026 Professional Website. All rights reserved.
+    </p>
   </footer>
 
 </body>
