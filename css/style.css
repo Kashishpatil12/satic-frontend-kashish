@@ -1,0 +1,227 @@
+
+/* ---------- RESET & GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: #0f172a;
+  padding: 20px 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* ---------- HERO SECTION ---------- */
+main section:first-child {
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  background: linear-gradient(to right, #0ea5e9, #2563eb);
+  color: white;
+}
+
+main section:first-child h2 {
+  font-size: 42px;
+}
+
+main section:first-child p {
+  max-width: 700px;
+  font-size: 18px;
+}
+
+main section:first-child button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+main section:first-child button:first-of-type {
+  background-color: #ffffff;
+  color: #2563eb;
+}
+
+main section:first-child button:last-of-type {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* ---------- ABOUT SECTION ---------- */
+section:nth-child(2) {
+  padding: 70px 60px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+section:nth-child(2) h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+section:nth-child(2) p {
+  max-width: 600px;
+  font-size: 17px;
+}
+
+/* ---------- SERVICES SECTION ---------- */
+section:nth-child(3) {
+  padding: 80px 60px;
+  background-color: #f1f5f9;
+}
+
+section:nth-child(3) h3 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+
+section:nth-child(3) article {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+section:nth-child(3) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ---------- TESTIMONIALS ---------- */
+section:nth-child(4) {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+section:nth-child(4) h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+section:nth-child(4) article {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* ---------- CALL TO ACTION ---------- */
+section:nth-child(5) {
+  padding: 70px 60px;
+  background: #2563eb;
+  color: white;
+  text-align: center;
+}
+
+section:nth-child(5) button {
+  margin-top: 20px;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #020617;
+  color: #cbd5e1;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer h4 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+footer p:last-child {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  section:nth-child(2) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
